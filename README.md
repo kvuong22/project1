@@ -7,4 +7,11 @@ SI507_project1.py imports all of the code from lab3_code.py and utilizes the Fla
 
 2. Makes clear what dependencies the project relies on, and/or tells the reader that you can install everything you need by using the included requirements.txt file.
 
+This project requires installation of what is listed in the requirements.txt file to run the project.
+
 3. Explains exactly how to run the Flask app, down to what to type in to your command prompt.
+
+To run the Flask application, in the command prompt, run 'python SI507_project1.py runserver'. Access the webpage either by using 1) the generated URL in the command prompt or by using 2) http://localhost:5000 and paste it into the browser. The home page should have a message saying, "Welcome to the banking application!"
+
+Other Functions
+To run the function for the bank name, edit the URL in the browser to '/bank/<name>' and input the name of the bank to get the message "Welcome to <name>." To run the function for the amount of the currency (Dollar, Pound, or Yuan), edit the URL in the browser to '/<currency>/<amt>'' and input one of the three currencies in the <currency> location and an integer where <amt> is. The message will print the amount and the currency input. Lastly, to run the function for the bank, currency, and amount, edit the URL in the browser to '/bank/<name>/<currency>/<value>' and input the bank's name for <name>, type of currency for <currency>, and an integer for the <value>. If the currency input is Dollar, Pound, or Yuan, you will get the message: '<bank's name> Bank holds the <currency matching one of the subclasses> currency and currently holds <value> of <the currency>.' If the currency input does not match any of the three subclasses, you will get the message: 'INVALID URL inputs for bank.'
